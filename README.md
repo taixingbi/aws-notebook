@@ -5,6 +5,7 @@ ssh -L localhost:8888:localhost:8888 -i "demo.pem" ubuntu@ec2-54-87-240-61.compu
 
 ssh -i  "demo.pem" ubuntu@ec2-54-91-40-65.compute-1.amazonaws.com
 ssh -L localhost:8888:localhost:8888 -i "demo.pem" ubuntu@ec2-54-91-40-65.compute-1.amazonaws.com
+sudo kill -9 $(sudo lsof -t -i:8888)
 ```
 ### share valume
 ```
