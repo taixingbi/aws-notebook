@@ -15,7 +15,7 @@ https://howchoo.com/g/ymmxmzlmndb/how-to-install-sshfs
 
 https://www.digitalocean.com/community/tutorials/how-to-install-the-django-web-framework-on-ubuntu-18-04
 ```
-python3.6 -m venv my_env
+python3.8 -m venv my_env
 source my_env/bin/activate
 ```
 
