@@ -1,7 +1,7 @@
 ### ssl notebook
 ```
-ssh -i  "demo.pem" ubuntu@ec2-3-85-201-163.compute-1.amazonaws.com
-ssh -L localhost:8888:localhost:8888 -i "demo.pem" ubuntu@ec2-3-85-201-163.compute-1.amazonaws.com
+ssh -i  "demo.pem" ubuntu@ec2-52-87-193-165.compute-1.amazonaws.com
+ssh -L localhost:8888:localhost:8888 -i "demo.pem" ubuntu@ec2-52-87-193-165.compute-1.amazonaws.com
 
 ssh -i  "demo.pem" ubuntu@ec2-52-91-116-79.compute-1.amazonaws.com
 ssh -L localhost:8888:localhost:8888 -i "demo.pem" ubuntu@ec2-52-91-116-79.compute-1.amazonaws.com
