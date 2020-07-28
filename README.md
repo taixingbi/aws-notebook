@@ -36,5 +36,5 @@ https://phoenixnap.com/kb/install-spark-on-ubuntu
 cat /usr/local/cuda/version.txt
 gcc --version
 nvcc --version
-
+nvidia-smi
 ```
