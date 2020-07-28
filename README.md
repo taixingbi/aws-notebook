@@ -21,6 +21,8 @@ https://www.digitalocean.com/community/tutorials/how-to-install-the-django-web-f
 ```
 python3.8 -m venv my_env
 source my_env/bin/activate
+sudo pip install pip --upgrade
+
 ```
 
 ### install spark in ubuntu
