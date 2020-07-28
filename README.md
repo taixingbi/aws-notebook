@@ -30,3 +30,8 @@ sudo pip install pip --upgrade
 https://phoenixnap.com/kb/install-spark-on-ubuntu
 
 
+
+### cuda
+```
+cat /usr/local/cuda/version.txt
+```
