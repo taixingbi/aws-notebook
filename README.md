@@ -38,3 +38,6 @@ gcc --version
 nvcc --version
 nvidia-smi
 ```
+
+### tf-gpu
+https://www.tensorflow.org/guide/distributed_training
