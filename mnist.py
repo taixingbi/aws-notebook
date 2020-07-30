@@ -1,4 +1,14 @@
 import tensorflow as tf
+
+mirrored_strategy = tf.distribute.experimental.MultiWorkerMirroredStrategy(
+    tf.distribute.experimental.CollectiveCommunication.NCCL)
+print(mirrored_strategy)
+
+# gpu1
+# INFO:tensorflow:Using MirroredStrategy with devices ('/device:GPU:0',)
+# INFO:tensorflow:Single-worker MultiWorkerMirroredStrategy with local_devices = ('/device:GPU:0',), communication = CollectiveCommunication.NCCL
+# <tensorflow.python.distribute.collective_all_reduce_strategy.CollectiveAllReduceStrategy object at 0x7fd0606f4198>
+
 import datetime
 
 mnist = tf.keras.datasets.mnist
@@ -6,11 +16,6 @@ mnist = tf.keras.datasets.mnist
 x_train, x_test = x_train / 255.0, x_test / 255.0
 
 print(x_train.shape, x_test.shape)
-
-mirrored_strategy = tf.distribute.experimental.MultiWorkerMirroredStrategy(
-    tf.distribute.experimental.CollectiveCommunication.NCCL)
-
-print(mirrored_strategy)
 
 with mirrored_strategy.scope():
     model = tf.keras.models.Sequential([
