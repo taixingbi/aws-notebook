@@ -42,3 +42,8 @@ nvidia-smi
 
 ### tf-gpu
 https://www.tensorflow.org/guide/distributed_training
+
+
+### other
+ssh -L localhost:8888:localhost:8888 -i "demo.pem" ubuntu@ec2-54-165-122-67.compute-1.amazonaws.com
+
