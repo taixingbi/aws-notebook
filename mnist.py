@@ -1,5 +1,10 @@
 import tensorflow as tf
 
+gpus = tf.config.experimental.list_physical_devices('GPU')
+for gpu in gpus:
+    print("Name:", gpu.name, "  Type:", gpu.device_type)
+# Name: /physical_device:GPU:0   Type: GPU
+
 mirrored_strategy = tf.distribute.experimental.MultiWorkerMirroredStrategy(
     tf.distribute.experimental.CollectiveCommunication.NCCL)
 print(mirrored_strategy)
