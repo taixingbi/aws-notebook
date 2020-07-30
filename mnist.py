@@ -39,6 +39,8 @@ model.compile(optimizer='adam',
 t1 = datetime.datetime.now()
 model.fit(x_train, y_train, epochs=5)
 model.evaluate(x_test,  y_test, verbose=2)
-print( datetime.datetime.now() - t1 ) # 0:00:26
+print( datetime.datetime.now() - t1 )
+
+# cpu 0:00:20.442683
 
 print("done")
