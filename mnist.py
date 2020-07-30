@@ -4,6 +4,11 @@ mirrored_strategy = tf.distribute.experimental.MultiWorkerMirroredStrategy(
     tf.distribute.experimental.CollectiveCommunication.NCCL)
 print(mirrored_strategy)
 
+#cpu
+# WARNING:tensorflow:There are non-GPU devices in `tf.distribute.Strategy`, not using nccl allreduce.
+# INFO:tensorflow:Using MirroredStrategy with devices ('/job:localhost/replica:0/task:0/device:CPU:0',)
+# Number of devices: 1
+
 # gpu1
 # INFO:tensorflow:Using MirroredStrategy with devices ('/device:GPU:0',)
 # INFO:tensorflow:Single-worker MultiWorkerMirroredStrategy with local_devices = ('/device:GPU:0',), communication = CollectiveCommunication.NCCL
