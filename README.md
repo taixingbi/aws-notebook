@@ -1,10 +1,11 @@
 ### ssl notebook
 ```
-ssh -i  "demo.pem" ubuntu@ec2-54-165-122-67.compute-1.amazonaws.com
-ssh -L localhost:8888:localhost:8888 -i "demo.pem" ubuntu@ec2-54-165-122-67.compute-1.amazonaws.com
-
+#cpu
 ssh -i  "demo.pem" ubuntu@ec2-35-153-52-213.compute-1.amazonaws.com
 ssh -L localhost:8888:localhost:8888 -i "demo.pem" ubuntu@ec2-35-153-52-213.compute-1.amazonaws.com
+#gpu
+ssh -i  "demo.pem" ubuntu@ec2-54-165-122-67.compute-1.amazonaws.com
+ssh -L localhost:8888:localhost:8888 -i "demo.pem" ubuntu@ec2-54-165-122-67.compute-1.amazonaws.com
 sudo kill -9 $(sudo lsof -t -i:8888)
 ```
 ### share valume
