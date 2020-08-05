@@ -22,7 +22,7 @@ https://www.digitalocean.com/community/tutorials/how-to-install-the-django-web-f
 ```
 python3.6 -m venv my_env
 source my_env/bin/activate
-sudo pip install pip --upgrade
+pip install pip --upgrade
 
 ```
 
