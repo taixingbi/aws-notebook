@@ -16,7 +16,7 @@ sshfs ubuntu@ec2-54-87-240-61.compute-1.amazonaws.com:/home/ubuntu/notebook kade
 https://howchoo.com/g/ymmxmzlmndb/how-to-install-sshfs
 
 
-### install pip in ubuntu 18.5 wiht python 3.6
+### install pip in ubuntu 18.05 with python 3.6
 
 https://www.digitalocean.com/community/tutorials/how-to-install-the-django-web-framework-on-ubuntu-18-04
 ```
