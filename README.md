@@ -1,8 +1,8 @@
 ### ssl notebook
 ```
 #cpu
-ssh -i  "demo.pem" ubuntu@ec2-34-207-249-2.compute-1.amazonaws.com
-ssh -L localhost:8888:localhost:8888 -i "demo.pem" ubuntu@ec2-34-207-249-2.compute-1.amazonaws.com
+ssh -i  "demo.pem" ubuntu@ ec2-100-25-150-155.compute-1.amazonaws.com
+ssh -L localhost:8888:localhost:8888 -i "demo.pem" ubuntu@ ec2-100-25-150-155.compute-1.amazonaws.com
 #gpu
 ssh -i  "demo.pem" ubuntu@ec2-18-208-161-59.compute-1.amazonaws.com
 ssh -L localhost:8888:localhost:8888 -i "demo.pem" ubuntu@ec2-18-208-161-59.compute-1.amazonaws.com
