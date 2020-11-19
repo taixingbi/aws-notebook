@@ -2,7 +2,7 @@
 ```
 #cpu
 ssh -i  "demo.pem" ubuntu@ec2-54-90-64-27.compute-1.amazonaws.com
-ssh -L localhost:8888:localhost:8888 -i "demo.pem" ubuntu@ec2-54-90-64-27.compute-1.amazonaws.com
+ssh -L localhost:8888:localhost:8888 -i "demo.pem" ubuntu@ec2-52-91-112-46.compute-1.amazonaws.com
 #gpu
 ssh -i  "demo.pem" ubuntu@ec2-18-208-161-59.compute-1.amazonaws.com
 ssh -L localhost:8888:localhost:8888 -i "demo.pem" ubuntu@ec2-18-208-161-59.compute-1.amazonaws.com
