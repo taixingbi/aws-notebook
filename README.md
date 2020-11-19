@@ -22,8 +22,8 @@ https://www.digitalocean.com/community/tutorials/how-to-install-the-django-web-f
 ```
 python3 -m venv myvenv
 source myvenv/bin/activate
-pip install -r requirements.txt
 pip install pip --upgrade
+pip install -r requirements.txt
 ```
 
 ### install spark in ubuntu
