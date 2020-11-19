@@ -20,10 +20,10 @@ https://howchoo.com/g/ymmxmzlmndb/how-to-install-sshfs
 
 https://www.digitalocean.com/community/tutorials/how-to-install-the-django-web-framework-on-ubuntu-18-04
 ```
-python3.6 -m venv my_env
-source my_env/bin/activate
+python3 -m venv myvenv
+source myvenv/bin/activate
+pip install -r requirements.txt
 pip install pip --upgrade
-
 ```
 
 ### install spark in ubuntu
